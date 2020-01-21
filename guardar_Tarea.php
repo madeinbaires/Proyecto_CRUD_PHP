@@ -1,6 +1,6 @@
 <?php
 
-$coneccion= mysqli_connect(
+$conexion= mysqli_connect(
     "localhost",
     "root",
     "",
@@ -23,7 +23,7 @@ if (isset ($_POST))
  
 
 $query= "INSERT INTO tareas(titulo,descripcion) VALUES ('$titulo','$descripcion')";
-$resultado=mysqli_query($coneccion,$query);
+$resultado=mysqli_query($conexion,$query);
 
 if(!$resultado)
 {
