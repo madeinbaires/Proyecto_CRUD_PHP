@@ -70,7 +70,7 @@ if (isset ($_SESSION['mensaje'])){?>
 </thead>
 <tbody>
 <?php 
-$coneccion= mysqli_connect(
+$conexion= mysqli_connect(
     "localhost",
     "root",
     "",
@@ -78,7 +78,7 @@ $coneccion= mysqli_connect(
     );
 
 $query="SELECT * FROM  tareas";
-$resultado_tareas=mysqli_query($coneccion,$query);
+$resultado_tareas=mysqli_query($conexion,$query);
 
 
 while ($row=mysqli_fetch_array($resultado_tareas)) {?>
