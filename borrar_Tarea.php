@@ -1,5 +1,5 @@
 <?php
-$coneccion= mysqli_connect(
+$conexion= mysqli_connect(
     "localhost",
     "root",
     "",
@@ -9,7 +9,7 @@ $coneccion= mysqli_connect(
     if (isset ($_GET['id'])){
         $id=$_GET['id'];
         $query="DELETE from tareas where id=$id";
-        $resultado=mysqli_query($coneccion,$query);
+        $resultado=mysqli_query($conexion,$query);
         if(!resultado){
             die('Consulta fallida');        
     }
